@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../../packages/domain" },
+    { "path": "../persistence" },
+    { "path": "../../data/generator" }
+  ],
+  "include": ["src/**/*.ts"]
+}

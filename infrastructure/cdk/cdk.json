@@ -1,0 +1,15 @@
+{
+  "app": "node dist/bin/app.js",
+  "watch": {
+    "include": ["bin/**/*.ts", "lib/**/*.ts", "src/**/*.ts"],
+    "exclude": ["dist", "cdk.out", "node_modules"]
+  },
+  "context": {
+    "project": "undiagnosed-disease-navigator",
+    "environment": "demo",
+    "costCenter": "udn-demo",
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true
+  }
+}

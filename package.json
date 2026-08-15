@@ -1,0 +1,39 @@
+{
+  "name": "undiagnosed-disease-navigator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-Assisted Undiagnosed Disease Case Navigator (monorepo root)",
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*",
+    "infrastructure/*",
+    "data/*",
+    "evaluation"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "lint": "eslint .",
+    "typecheck": "tsc --build --noEmit || tsc --build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:report": "node scripts/test-report.mjs",
+    "validate:structure": "node scripts/validate-structure.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/node": "^22.7.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.10.0",
+    "vitest": "^2.1.0",
+    "fast-check": "^3.22.0"
+  }
+}

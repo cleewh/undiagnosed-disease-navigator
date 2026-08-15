@@ -1,0 +1,16 @@
+{
+  "name": "@udn/reanalysis",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@udn/domain": "0.1.0",
+    "@udn/knowledge": "0.1.0"
+  }
+}

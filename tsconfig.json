@@ -1,0 +1,29 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/domain" },
+    { "path": "./services/audit" },
+    { "path": "./services/persistence" },
+    { "path": "./services/intake" },
+    { "path": "./services/ai-gateway" },
+    { "path": "./services/timeline" },
+    { "path": "./services/phenotype" },
+    { "path": "./services/review" },
+    { "path": "./services/contradiction" },
+    { "path": "./services/evidence-gap" },
+    { "path": "./services/analysis" },
+    { "path": "./services/reanalysis" },
+    { "path": "./services/knowledge" },
+    { "path": "./services/hypothesis" },
+    { "path": "./services/prioritisation" },
+    { "path": "./services/mdt" },
+    { "path": "./services/disposition" },
+    { "path": "./services/vertical-slice" },
+    { "path": "./services/safeguards" },
+    { "path": "./apps/api" },
+    { "path": "./apps/web" },
+    { "path": "./infrastructure/cdk" },
+    { "path": "./data/generator" },
+    { "path": "./evaluation" }
+  ]
+}

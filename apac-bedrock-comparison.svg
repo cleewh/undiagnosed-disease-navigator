@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1080" viewBox="0 0 1360 1080" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 30px; font-weight: 700; fill: #0f1b33; }
+      .sub { font-size: 15px; fill: #55617a; }
+      .sect { font-size: 20px; font-weight: 700; fill: #0f1b33; }
+      .hdr { font-size: 15px; font-weight: 700; fill: #ffffff; }
+      .cap { font-size: 14px; font-weight: 700; fill: #0f1b33; }
+      .cell { font-size: 13.5px; fill: #14203a; }
+      .cellsm { font-size: 12px; fill: #14203a; }
+      .muted { font-size: 12.5px; fill: #55617a; }
+      .good { font-size: 13.5px; font-weight:700; fill: #067647; }
+      .bad { font-size: 13.5px; font-weight:700; fill: #b42318; }
+      .warn { font-size: 13.5px; font-weight:700; fill: #b54708; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1360" height="1080" fill="#eef2f8"/>
+
+  <text x="40" y="52" class="title">AWS AI in-country comparison — Singapore vs Korea vs Japan</text>
+  <text x="40" y="76" class="sub">Amazon Bedrock in-country (on-demand) models + AI/ML infrastructure. "In-country" = on-demand base-model inference that stays in-region.</text>
+
+  <!-- ================= TABLE 1: MODELS ================= -->
+  <text x="40" y="118" class="sect">Bedrock — in-country (on-demand) models</text>
+
+  <!-- header row -->
+  <g>
+    <rect x="40" y="132" width="300" height="40" fill="#0c1728"/>
+    <rect x="340" y="132" width="320" height="40" fill="#2563eb"/>
+    <rect x="660" y="132" width="320" height="40" fill="#2563eb"/>
+    <rect x="980" y="132" width="340" height="40" fill="#2563eb"/>
+    <text x="52" y="157" class="hdr"> </text>
+    <text x="352" y="157" class="hdr">Singapore (ap-southeast-1)</text>
+    <text x="672" y="157" class="hdr">Korea / Seoul (ap-northeast-2)</text>
+    <text x="992" y="157" class="hdr">Japan / Tokyo (ap-northeast-1)</text>
+  </g>
+
+  <!-- row: count -->
+  <rect x="40" y="172" width="1280" height="34" fill="#ffffff"/>
+  <text x="52" y="194" class="cap">On-demand models (all modalities)</text>
+  <text x="352" y="194" class="cell">4</text>
+  <text x="672" y="194" class="cell">5</text>
+  <text x="992" y="194" class="cell" font-weight="700">49</text>
+
+  <!-- row: chat models -->
+  <rect x="40" y="206" width="1280" height="110" fill="#f5f8fc"/>
+  <text x="52" y="228" class="cap">In-country chat models</text>
+  <text x="352" y="228" class="cellsm">Claude 3 Haiku</text>
+  <text x="352" y="246" class="cellsm">Claude 3.5 Sonnet (2024-06)</text>
+  <text x="672" y="228" class="cellsm">Claude 3 Haiku</text>
+  <text x="672" y="246" class="cellsm">Claude 3.5 Sonnet (2024-06)</text>
+  <text x="992" y="228" class="cellsm">Nova Lite; Claude 3 Haiku;</text>
+  <text x="992" y="246" class="cellsm">Claude 3.5 Sonnet; DeepSeek V3/V3.2;</text>
+  <text x="992" y="264" class="cellsm">Gemma 3 (4/12/27B); Mistral Large 3,</text>
+  <text x="992" y="282" class="cellsm">Ministral, Magistral; Qwen3 (32B/235B/</text>
+  <text x="992" y="300" class="cellsm">Coder/VL); gpt-oss 20B/120B; Kimi K2;</text>
+  <text x="992" y="318" class="cellsm" x2="0">Nemotron; GLM 4.7/5</text>
+
+  <!-- row: cheapest/best -->
+  <rect x="40" y="316" width="1280" height="34" fill="#ffffff"/>
+  <text x="52" y="338" class="cap">Cheapest / best in-country</text>
+  <text x="352" y="338" class="cellsm">Haiku / 3.5 Sonnet</text>
+  <text x="672" y="338" class="cellsm">Haiku / 3.5 Sonnet</text>
+  <text x="992" y="338" class="cellsm">Nova Lite / Qwen3-235B, Mistral Large 3</text>
+
+  <!-- row: frontier availability -->
+  <rect x="40" y="350" width="1280" height="34" fill="#f5f8fc"/>
+  <text x="52" y="372" class="cap">Frontier Claude (Sonnet 4.x/5, Opus)</text>
+  <text x="352" y="372" class="warn">profile-only</text>
+  <text x="672" y="372" class="warn">profile-only</text>
+  <text x="992" y="372" class="warn">profile-only</text>
+
+  <!-- row: frontier residency -->
+  <rect x="40" y="384" width="1280" height="34" fill="#ffffff"/>
+  <text x="52" y="406" class="cap">Frontier Claude — data residency</text>
+  <text x="352" y="406" class="bad">may leave country</text>
+  <text x="672" y="406" class="bad">may leave country</text>
+  <text x="992" y="406" class="bad">may leave country</text>
+
+  <!-- ================= TABLE 2: INFRA ================= -->
+  <text x="40" y="470" class="sect">AI / ML infrastructure</text>
+
+  <g>
+    <rect x="40" y="484" width="300" height="40" fill="#0c1728"/>
+    <rect x="340" y="484" width="320" height="40" fill="#334155"/>
+    <rect x="660" y="484" width="320" height="40" fill="#334155"/>
+    <rect x="980" y="484" width="340" height="40" fill="#334155"/>
+    <text x="352" y="509" class="hdr">Singapore</text>
+    <text x="672" y="509" class="hdr">Korea (Seoul)</text>
+    <text x="992" y="509" class="hdr">Japan (Tokyo)</text>
+  </g>
+
+  <!-- bedrock -->
+  <rect x="40" y="524" width="1280" height="32" fill="#ffffff"/>
+  <text x="52" y="545" class="cap">Amazon Bedrock</text>
+  <text x="352" y="545" class="good">yes</text><text x="672" y="545" class="good">yes</text><text x="992" y="545" class="good">yes</text>
+  <!-- sagemaker -->
+  <rect x="40" y="556" width="1280" height="32" fill="#f5f8fc"/>
+  <text x="52" y="577" class="cap">Amazon SageMaker</text>
+  <text x="352" y="577" class="good">yes</text><text x="672" y="577" class="good">yes</text><text x="992" y="577" class="good">yes</text>
+  <!-- healthomics -->
+  <rect x="40" y="588" width="1280" height="32" fill="#ffffff"/>
+  <text x="52" y="609" class="cap">AWS HealthOmics (genomics)</text>
+  <text x="352" y="609" class="good">yes</text><text x="672" y="609" class="good">yes</text><text x="992" y="609" class="good">yes</text>
+  <!-- kiro -->
+  <rect x="40" y="620" width="1280" height="32" fill="#f5f8fc"/>
+  <text x="52" y="641" class="cap">Kiro — in-country inference</text>
+  <text x="352" y="641" class="bad">No (managed)</text>
+  <text x="672" y="641" class="bad">No (managed)</text>
+  <text x="992" y="641" class="bad">No (managed)</text>
+  <!-- highest gpu -->
+  <rect x="40" y="652" width="1280" height="32" fill="#ffffff"/>
+  <text x="52" y="673" class="cap">Highest-end GPU</text>
+  <text x="352" y="673" class="cellsm">P4de (A100 80GB) [gated] — no H100</text>
+  <text x="672" y="673" class="cellsm">P5 (H100) [gated], P4d [gated]</text>
+  <text x="992" y="673" class="cellsm">P5/P5en (H100) [gated], P4d/P4de [gated]</text>
+  <!-- gpu families -->
+  <rect x="40" y="684" width="1280" height="52" fill="#f5f8fc"/>
+  <text x="52" y="704" class="cap">GPU families offered</text>
+  <text x="352" y="704" class="cellsm">g4dn, g5g, inf1, inf2,</text>
+  <text x="352" y="722" class="cellsm">p4de</text>
+  <text x="672" y="704" class="cellsm">g4dn, g5, g5g, g6, g6e, g6f,</text>
+  <text x="672" y="722" class="cellsm">g7e, inf1, inf2, p4d, p5, p5en</text>
+  <text x="992" y="704" class="cellsm">g4ad, g4dn, g5, g5g, g6, g6e, g6f,</text>
+  <text x="992" y="722" class="cellsm">g7e, inf1, inf2, p3dn, p4d, p4de, p5, p5en</text>
+  <!-- inferentia -->
+  <rect x="40" y="736" width="1280" height="32" fill="#ffffff"/>
+  <text x="52" y="757" class="cap">Inferentia (inf1/inf2)</text>
+  <text x="352" y="757" class="good">yes</text><text x="672" y="757" class="good">yes</text><text x="992" y="757" class="good">yes</text>
+  <!-- trainium -->
+  <rect x="40" y="768" width="1280" height="32" fill="#f5f8fc"/>
+  <text x="52" y="789" class="cap">Trainium (trn1/trn2)</text>
+  <text x="352" y="789" class="muted">not offered</text>
+  <text x="672" y="789" class="muted">not offered</text>
+  <text x="992" y="789" class="muted">not offered</text>
+
+  <!-- notes -->
+  <text x="40" y="850" class="cap">Notes &amp; legend</text>
+  <text x="40" y="874" class="muted">[gated] Gated GPU — P-family needs a Service Quota increase; H100 P5 (and often A100 P4d/P4de) also needs Capacity Blocks for ML / On-Demand Capacity Reservation.</text>
+  <text x="40" y="894" class="muted">[quota] Quota-limited — G-family + Inferentia need a quota increase but are generally granted. New-account default on-demand quota for P/G is often 0.</text>
+  <text x="40" y="914" class="muted">Frontier Claude (Sonnet 4.x/5, Opus) has no in-country option anywhere — only the multi-country APAC inference profile, so data may leave the country in all three.</text>
+  <text x="40" y="934" class="muted">Kiro is a managed authoring tool; its own inference is not region-pinnable. In-country inference = your own Bedrock stack in-region.</text>
+  <text x="40" y="954" class="muted">Bedrock "listed" is not the same as access-enabled in the account; GPU gating is account/quota-specific. Snapshot from live AWS query; verify before production.</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../../packages/domain" },
+    { "path": "../ai-gateway" },
+    { "path": "../intake" },
+    { "path": "../timeline" },
+    { "path": "../phenotype" },
+    { "path": "../review" },
+    { "path": "../reanalysis" }
+  ],
+  "include": ["src/**/*.ts"]
+}

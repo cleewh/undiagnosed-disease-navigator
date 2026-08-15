@@ -1,0 +1,21 @@
+{
+  "name": "@udn/vertical-slice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@udn/ai-gateway": "0.1.0",
+    "@udn/domain": "0.1.0",
+    "@udn/intake": "0.1.0",
+    "@udn/phenotype": "0.1.0",
+    "@udn/reanalysis": "0.1.0",
+    "@udn/review": "0.1.0",
+    "@udn/timeline": "0.1.0"
+  }
+}

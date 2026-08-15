@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Test / coverage output
+coverage/
+.vitest/
+test-results/
+reports/
+
+# CDK
+infrastructure/cdk/cdk.out/
+cdk.out/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# TypeScript incremental cache
+*.tsbuildinfo
+
+# Blog / LinkedIn article and its screenshots (not part of the build)
+docs/blog/
+
+# Extra secret safety (never commit credentials)
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+credentials
+aws-exports.js
+.env.local

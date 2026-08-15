@@ -1,0 +1,19 @@
+{
+  "name": "@udn/intake",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@udn/domain": "0.1.0",
+    "@udn/persistence": "0.1.0"
+  },
+  "devDependencies": {
+    "@udn/data-generator": "0.1.0"
+  }
+}
